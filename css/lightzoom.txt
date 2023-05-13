@@ -1,0 +1,34 @@
+1. JQuery
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+2. JS Lightzoom
+<script src="https://wsxzaq127.github.io/lightzoom.js"></script>
+
+3. CSS Lightzoom
+<link rel="stylesheet" href="https://wsxzaq127.github.io/style.css" type="text/css">
+
+4. Запуск плагина
+<script type="text/javascript">
+  jQuery('.lightzoom').lightzoom();
+</script>
+
+5. Настройки 
+
+<script type="text/javascript">
+  ;( function( $ ) {
+
+$( '.lightzoom' ).lightzoom( {
+  speed:                 400,   // скорость появления
+  imgPadding:            10,    // значение отступа у изображения
+  overlayOpacity:        '0.5', // прозрачность фона (от 0 до 1)
+  viewTitle:             false, // true, если надо показывать подпись к изобажению
+  isOverlayClickClosing: false, // true, если надо закрывать окно при клике по затемненной области
+  isWindowClickClosing:  false, // true, если надо закрывать окно при клике по любой области
+  isEscClosing:          false, // true, если надо закрывать окно при нажатии на кнопку Esc
+  boxClass:              '',    // позволяет задавать класс окну обертке (с версии 1.1.0)
+  overlayColor:          '',    // позволяет задавать цвет фону (с версии 1.1.0)
+  titleColor:            '',    // позволяет задавать цвет подписи (с версии 1.1.0)
+} );
+
+} )( jQuery );
+</script>
